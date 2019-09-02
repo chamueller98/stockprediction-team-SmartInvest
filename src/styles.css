@@ -5,7 +5,7 @@ h1 {
 }
 
 h2 {
-  color: black;
+  color: white;
   text-align-last: center;
   font-family: "Garamond Header";
   line-height: 2.5;
@@ -46,7 +46,7 @@ img {
   margin: 16px;
   line-height: 2.5;
   text-align: justify;
-  background-color: rgba(155, 155, 155, 0.8);
+  background-color: rgba(194, 153, 100, 0.8);
 }
 
 /* page2 css: */
