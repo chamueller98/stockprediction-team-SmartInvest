@@ -1,0 +1,50 @@
+h1 {
+  color: white;
+  text-align-last: center;
+  font-family: "Garamond Header";
+}
+
+h2 {
+  color: black;
+  text-align-last: center;
+  font-family: "Garamond Header";
+  line-height: 2.5;
+}
+
+body {
+  font-family: "Garamond body copy";
+  line-height: 500%;
+  line-height: 2.5;
+  background-color: black;
+  text-align: center;
+  background-image: url("http://i.freegifmaker.me/1/5/6/7/4/1/15674109232638914.gif?1567410936");
+  background-size: cover;
+
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 7%;
+  margin: auto;
+  padding-top: 15px;
+}
+#name {
+  color: rgb(194, 153, 100);
+}
+
+.content {
+  text-align-last: center;
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 15px;
+  margin: 16px;
+  line-height: 2.5;
+  text-align: justify;
+  background-color: rgba(155, 155, 155, 0.8);
+}
