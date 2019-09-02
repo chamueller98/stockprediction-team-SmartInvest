@@ -49,6 +49,27 @@ img {
   background-color: rgba(155, 155, 155, 0.8);
 }
 
-.tabletext{
-  color: azure;
+/* page2 css: */
+
+h3 {
+  color: white;
+  text-align-last: center;
+  font-family: "Garamond Header";
+}
+
+
+th, td {
+  border: 8px solid black;
+  border-collapse: collapse;
+}
+
+
+.tablecontent{
+  color: rgb(255, 255, 255);
+  border: 8px solid black;
+  border-collapse: collapse;
+  background-color: rgba(194, 153, 100, 0.9);
+  margin-left: 25%
+  
+
 }
