@@ -1,6 +1,6 @@
 function updateFollowers() {
   console.log("hi from updateFollowers");
-  let personal_name = prompt("What's your name?");
+  let personal_name = prompt("Could you tell us your name?");
   let result = "Your name is: " + personal_name;
   console.log(result);
   let name = document.getElementById("followers");
