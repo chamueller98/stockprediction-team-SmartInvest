@@ -4,7 +4,7 @@
 <head>
 	<title>Smart Invest</title>
 	<meta charset="UTF-8" />
-	<link rel="stylesheet" href="src/styles.css" />
+	<link rel="stylesheet" href="/static/styles.css" />
 </head>
 
 
@@ -19,14 +19,18 @@
 		With a unique machine learning algorithm developed by a group of data scientists at the Summer School 2019 at the University of St. Gallen, smart invest is able to propose the best performing stocks suited to your personal preferences. The algorithm does so by xxxx.
 		Start your journey know and click on this button:
 
-		<img src="smart_invest_logo.png" onclick="updateFollowers()" />
+		<form action="/3" method="GET">
+			<input type="text" name="name">
+			<input type="submit">
+		</form>
+		<img src="/static/smart_invest_logo.png" onclick="updateFollowers()" />
 		
 
 	</div>
 <audio autoplay>
-  <source src="wolf.mp3" type="audio/mpeg">
+  <source src="/static/wolf.mp3" type="audio/mpeg">
 </audio>
-<script src="src/index.js"></script>
+<script src="/static/index.js"></script>
 </body>
 
 </html>

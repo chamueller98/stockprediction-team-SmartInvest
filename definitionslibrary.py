@@ -1,7 +1,3 @@
-def writename (name):
-    result = ("We kindly welcome you " + name + " have a look at your personalized table.")
-    return result
-
 #defintion for reading csv files - not sure if it works but looks like a good start at the least :)
 import csv
 

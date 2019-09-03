@@ -1,19 +1,24 @@
-from flask import Flask
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route("/")
-name = input("How may we call you? ")
-def writename (name):
-    result = ("We kindly welcome you " + name + " have a look at your personalized table.")
-    return result
-print (writename(name))
+
+@app.route("/2")
+def view_template():
+    print("Chau mundo!")
+    return render_template("index.html")
+
+@app.route("/3")
+def view_template2():
+    name = request.args.get('name')
+    print (name)
+
+    return render_template("page2.html",a_name=name)
 
 
 
 
-#code unten nur damit automatische Wiederholung und wir nicht jedesmal seite killen müssen sondern nur 
-# refresh, funktioniert jedoch momentan leider nicht..
+
 
 if __name__ == "__main__":
     app.run(debug=True)

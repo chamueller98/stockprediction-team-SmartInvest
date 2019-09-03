@@ -57,6 +57,12 @@ h3 {
   font-family: "Garamond Header";
 }
 
+h4 {
+  color: white;
+  text-align-last: center;
+  font-family: "Garamond Header";
+}
+
 
 th, td {
   border: 8px solid black;
@@ -70,6 +76,10 @@ th, td {
   border-collapse: collapse;
   background-color: rgba(194, 153, 100, 0.9);
   margin-left: 25%
-  
 
+}
+
+.Namestyle {
+  color: rgb(194, 153, 100);
+  size: 3cm;
 }

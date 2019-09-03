@@ -4,7 +4,7 @@ function updateFollowers() {
   let result = "Your name is: " + personal_name;
   console.log(result);
   let name = document.getElementById("followers");
-  followers.textContent = number_followers;
+  window.open("/3?name="+personal_name, "_top");
 }
 
 function updateName() {
