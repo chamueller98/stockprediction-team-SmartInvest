@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
-from trycsv import get_info
-import math
+import pandas as pd
 
 app = Flask(__name__)
 
@@ -12,19 +11,16 @@ def view_template():
 
 @app.route("/3")
 def view_template2():
+
+    # Process dataframe
+    df = pd.read_csv("csv_stockfile.csv")
+    df['Expected Return'] = round(df['Expected Return'],2) 
+    df['Reliability (RMSE)'] = round(df['Reliability (RMSE)'],2)
+
     name = request.args.get('name')
-    print (get_info())
     print (name)
 
-    return render_template("page2.html",a_name=name, tablecontent=get_info())
-
-
-@app.route("/3")
-def round_content():
-    for content in tablecontent:
-        round(content[3],2)
-        round(content[4],2)
-    return round_content()
+    return render_template("page2.html",a_name=name, tablecontent=df.iterrows())
 
 
 if __name__ == "__main__":

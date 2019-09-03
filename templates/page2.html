@@ -16,13 +16,20 @@
 
 	<table style="width:50%" class="tablecontent">
 
+		<tr>
+			<td>Ticker</td>
+			<td>Company name</td>
+			<td>Expected Return</td>
+			<td>Reliability (RMSE)</td>
+		</tr>
 
-	  	{% for content in tablecontent %}
+	  	{% for idx, row in tablecontent %}
 
-	  <tr><td>{{content[1]}}</td>
-		<td>{{content[2]}}</td>
-		<td>{{content[3]}}</td>
-		<td>{{content[4]}}</td>
+	  <tr>
+		<td>{{row[1]}}</td>
+		<td>{{row[2]}}</td>
+		<td>{{row[3]}}</td>
+		<td>{{row[4]}}</td>
 	</tr>
 		{% endfor %}
 
