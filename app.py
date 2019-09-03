@@ -13,7 +13,7 @@ def view_template():
 def view_template2():
 
     # Process dataframe
-    df = pd.read_csv("csv_stockfile.csv")
+    df = pd.read_csv("from_backend_with_love.csv")
     df['Expected Return'] = round(df['Expected Return'],2) 
     df['Reliability (RMSE)'] = round(df['Reliability (RMSE)'],2)
 

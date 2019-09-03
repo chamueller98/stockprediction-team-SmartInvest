@@ -1,0 +1,11 @@
+,Ticker,Company,Expected Return,Reliability (RMSE)
+2,AAP,Advance Auto Parts,-0.464774662362099,69.47725966559324
+1,AAL,American Airlines Group,-0.4767701204445642,25.18601381390933
+0,A,Agilent Technologies Inc,-0.5387914596169228,31.462226483175503
+3,AAPL,Apple Inc.,,
+4,ABBV,AbbVie Inc.,,
+5,ABC,AmerisourceBergen Corp,,
+6,ABMD,ABIOMED Inc,,
+7,ABT,Abbott Laboratories,,
+8,ACN,Accenture plc,,
+9,ADBE,Adobe Systems Inc,,
