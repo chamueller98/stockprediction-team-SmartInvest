@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from tryscv import get_info
+from trycsv import get_info
 
 app = Flask(__name__)
 
