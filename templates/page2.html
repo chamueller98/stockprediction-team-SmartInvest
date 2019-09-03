@@ -2,49 +2,32 @@
 <html>
 
 <head>
-	<title>Hello there</title>
+	<title>Smart Invest</title>
 	<meta charset="UTF-8" />
 	<link rel="stylesheet" href="/static/styles.css" />
 </head>
 
 
 <body>
-
 	<h1>Smart Invest Table</h1>
-	<h2>We kindly welcome you <span class="Namestyle"> {{a_name}} </span> have a look at your personalized table.</h2>
-	<!--hier brauchen wir dann denn Text den wir mit der definition aus der library kriegen "--->  
-
+	<h2>We kindly welcome you <span class="Namestyle"> {{a_name}} </span> to have a look at your personalized table:</h2>
+	
 	<!--  th = table heading, td = table data, tr = table row, caption = table caption --->
 
 	<table style="width:50%" class="tablecontent">
-		
-	  <tr>
-		<th>Code</th>
-		<th>Company</th> 
-		<th>Price</th>
-		<th>Prediction</th>
-	  </tr>
-	  <tr>
-		<td>APPL</td>
-		<td>Apple Inc.</td>
-		<td>500</td>
-		<td><img src="smart_invest_logo.png"></td> <!--- brauche hier mal ein foto, da wir nachher 
-			auch ein foto haben: müssen schauen dass wir die zelle weniger breit machen können-->
-	  </tr>
-	  <tr>
-		<td>MSFT</td>
-		<td>Microsoft</td>
-		<td>94</td>
-		<td><img src="smart_invest_logo.png"></td>
-	  </tr>
-	  <tr>
-		<td>GOOG</td>
-		<td>Google Inc.</td>
-		<td>80</td>
-		<td><img src="smart_invest_logo.png"></td>
-	  </tr>
+
+
+	  	{% for content in tablecontent %}
+
+	  <tr><td>{{content[0]}}</td>
+		<td>{{content[1]}}</td>
+		<td>{{content[2]}}</td>
+		<td>{{content[3]}}</td>
+	</tr>
+		{% endfor %}
+
+
 	</table>
-<script src="src/index.js"></script>
 </body>
 
 </html>

@@ -12,13 +12,10 @@ def view_template():
 @app.route("/3")
 def view_template2():
     name = request.args.get('name')
+    print (get_info())
     print (name)
 
-    return render_template("page2.html",a_name=name)
-
-
-
-
+    return render_template("page2.html",a_name=name, tablecontent=get_info())
 
 
 if __name__ == "__main__":
