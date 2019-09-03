@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from trycsv import get_info
+import math
 
 app = Flask(__name__)
 
@@ -18,5 +19,14 @@ def view_template2():
     return render_template("page2.html",a_name=name, tablecontent=get_info())
 
 
+@app.route("/3")
+def round_content():
+    for content in tablecontent:
+        round(content[3],2)
+        round(content[4],2)
+    return round_content()
+
+
 if __name__ == "__main__":
     app.run(debug=True)
+
