@@ -1,1 +1,1 @@
-# hackathlon project; Team: SmartInvest
+# hackathlon project; team: SmartInvest
