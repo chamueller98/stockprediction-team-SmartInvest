@@ -11,7 +11,9 @@ def view_template():
 
 @app.route("/3")
 def view_template2():
-
+    # Run the model with the file: _from_backend_with_love.csv to see if our model works! 
+    # The computer-power was too little to load the whole data through the night. 
+    # That is why we used _from_backend_with_love.csv at our presentation.
     # Process dataframe
     df = pd.read_csv("from_backend_with_love.csv")
     df['Expected Return'] = round(df['Expected Return'],2) 
